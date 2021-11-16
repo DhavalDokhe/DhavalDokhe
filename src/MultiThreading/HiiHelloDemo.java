@@ -1,7 +1,7 @@
 package MultiThreading;
 
 public class HiiHelloDemo {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Thread t1=new Thread(new Runnable() {
             @Override
             public void run() {
@@ -21,7 +21,7 @@ public class HiiHelloDemo {
             @Override
             public void run() {
                 for (int i=1;i<=5;i++){
-                    System.out.println("hello");
+                    System.out.println("Hello");
                     try {
                         Thread.sleep(500);
                     } catch (InterruptedException e) {
@@ -31,5 +31,10 @@ public class HiiHelloDemo {
         });
         t1.start();
         t2.start();
+
+        t1.join();
+        t2.join();
+
+        System.out.println("Exit ");
     }
     }
