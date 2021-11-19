@@ -4,6 +4,10 @@ class BookTheaterSeats{
     int total_seats=10;
     int seats;
  synchronized void BookSeat(int seats){
+
+     System.out.println("hii"+Thread.currentThread().getName());
+     System.out.println("hii"+Thread.currentThread().getName());
+     System.out.println("hii"+Thread.currentThread().getName());
          if (total_seats>=seats){
              System.out.println("seats book successfully");
              total_seats=total_seats-seats;
@@ -12,6 +16,10 @@ class BookTheaterSeats{
              System.out.println("sorry seats cannot be booked");
              System.out.println("seats left are "+total_seats);
          }
+
+     System.out.println("hii"+Thread.currentThread().getName());
+     System.out.println("hii"+Thread.currentThread().getName());
+     System.out.println("hii"+Thread.currentThread().getName());
     }
 }
 
