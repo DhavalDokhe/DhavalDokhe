@@ -4,12 +4,12 @@ public class Swap {
     public static void main(String[] args) {
         int a=10,b=20;
       //  int t;
-                  //using variable
+                  //using Ulhas.variable
      //   t=a;
       //  a=b;
       //  b=t;
 
-        //without using variable
+        //without using variable1
         a=a+b;  //30
         b=a-b;  //30-20=10
         a=a-b;   //30-10=20

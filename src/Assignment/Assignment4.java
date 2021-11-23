@@ -7,7 +7,7 @@ public class Assignment4
         int a=10;
         int b=20;
 
-        //using third variable c=a;a=b;b=a;
+        //using third Ulhas.variable c=a;a=b;b=a;
 
         a=a+b;
         b=a-b;
