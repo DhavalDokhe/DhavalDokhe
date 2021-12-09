@@ -8,7 +8,7 @@ import java.sql.Statement;
 public class JdbcDemo {
     public static void main(String[] args) {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");  //regirstring driver
+            Class.forName("com.mysql.cj.jdbc.Driver");  //registering driver
 
             Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/Dhaval","Dhaval","Dr301*dp");
 

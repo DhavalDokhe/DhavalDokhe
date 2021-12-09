@@ -12,13 +12,13 @@ public class UpdateDemo {
             Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/Dhaval","Dhaval","Dr301*dp");
 
             Statement statement= connection.createStatement();
-           //String update="update employee set name='Ramesh' where id=1";   //update the employee where id =1
+          // String update="update employee set name='Ramesh' where id=1";   //update the employee where id =1
 
-          //  String insert ="insert into employee(id,name,address) values(2,'naredra','Delhi')";  //insert new row
+            String insert ="insert into employee(id,name,address) values(2,'naredra','Delhi')";  //insert new row
 
-             String  delete="delete from employee where id=1";     //delete the employee row where the id =1;
+           //  String  delete="delete from employee where id=2";     //delete the employee row where the id =1;
 
-            int i=statement.executeUpdate(delete);
+            int i=statement.executeUpdate(insert);
 
             System.out.println("row inserted ==>"+i);
 
