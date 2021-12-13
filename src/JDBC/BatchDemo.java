@@ -28,6 +28,7 @@ public class BatchDemo {
 
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
+
         }
     }
 }
