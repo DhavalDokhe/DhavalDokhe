@@ -13,6 +13,7 @@ public class FunctionDemo {
             if (integer> 5);
             return integer;
         });
+
         Function<Integer,Integer> function1=f->f*2;
         System.out.println(function.andThen(function1).apply(i));;
     }
