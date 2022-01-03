@@ -10,7 +10,6 @@ public class ArmstrongNo {
         while (a>0){
             reminder=a%10;
             res=res+ reminder*reminder*reminder;
-
             a=a/10;
         }
         if (number==res){
