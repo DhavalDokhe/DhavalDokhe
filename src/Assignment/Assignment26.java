@@ -12,7 +12,7 @@ public class Assignment26 {
         if (character>='a'&&character<='z'||character>='A'&&character<='Z'){
             System.out.println("character is alphabets");
         }
-        else if (character>=0&&character<=9){
+        else if (character>=0 && character<=9){
             System.out.println("character is number");
         }
         else {
